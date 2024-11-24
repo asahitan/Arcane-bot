@@ -1,4 +1,4 @@
-body {
+body { 
     font-family: 'Arial', sans-serif;
     margin: 0;
     background-color: #0a0a1a;
@@ -24,7 +24,7 @@ header .logo {
 }
 
 .logo-icon {
-    width: 30px; /* Adjust the width to make it smaller */
+    width: 30px;
     height: auto;
     margin-right: 10px;
 }
@@ -40,11 +40,26 @@ header nav a:hover {
     color: #00c6ff;
 }
 
+/* Animated Hero Section */
 .hero {
     text-align: center;
     padding: 100px 20px;
     color: #00c6ff;
     background: linear-gradient(to bottom right, #020024, #090979, #00d4ff);
+    background-size: 400% 400%;
+    animation: colorShift 8s ease infinite;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .hero h1 {
